@@ -1,5 +1,3 @@
-# facebook clone web application
-
 This project is a basic cloned of the facebook social media website
 
 ### Copy remote, pull and push without error
