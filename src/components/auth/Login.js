@@ -34,7 +34,7 @@ export default function Login() {
         />
       </div>
       <Button type="submit" onClick={signIn}>
-        Sign In
+        Sign In with Google
       </Button>
     </div>
   );
