@@ -1,5 +1,13 @@
 This project is a basic cloned of the facebook social media website
 
+### Clone and run
+
+```
+git clone https://github.com/kenLovesToCode/facebook-clone.git
+yarn || npm install
+yarn start || npm start
+```
+
 ### Copy remote, pull and push without error
 
 ```
@@ -11,7 +19,7 @@ git commit -m 'first commit'
 git push origin master
 ```
 
-###firestore deployment
+### firebase deployment
 
 ```
 sudo npm i -g firebase-tools
@@ -27,6 +35,10 @@ firebase init
 yarn build || npm run build
 ```
 
-`firebase deploy`
+```
+firebase deploy
+```
+
 keep it clean! OK
+
 [kenLovesToCode Facebook-clone](https://kenlovestocode-facebook-clone.web.app)
