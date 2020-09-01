@@ -10,14 +10,14 @@ import {
   VideoLibrary,
   ExpandMoreOutlined,
 } from "@material-ui/icons";
+import { useStateValue } from "../../store/StateProvider";
 
 export default function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow
-        title="Jovanne Vicentino"
-        src="https://lh3.googleusercontent.com/a-/AOh14Gjsn414ouRUth9kaHcN2LK4ab8VIRmZ4tZnqnne=s88-c-k-c0x00ffffff-no-rj-mo"
-      />
+      <SidebarRow title={user.displayName} src={user.photoURL} />
+      <SidebarRow title="COVID-19 Information Center" Icon={LocalHospital} />
       <SidebarRow title="Pages" Icon={EmojiFlags} />
       <SidebarRow title="Friends" Icon={People} />
       <SidebarRow title="Messages" Icon={Chat} />
